@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ✅ add করো */
+body {
+  color: black;
+  background-color: white;
+}
