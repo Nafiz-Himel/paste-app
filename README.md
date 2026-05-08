@@ -33,14 +33,17 @@ https://your-live-link.com
 ## 📁 Project Structure
 ```
 paste-app/
-  src/
-    components/
-    pages/
-    hooks/
-    utils/
-  public/
-  package.json
-  README.md
+│── public/
+│
+│── src/
+│ ├── app/ # Next.js app router
+│ ├── components/
+│ ├── hooks/
+│ ├── utils/
+│ └── styles/
+│
+│── package.json
+│── README.md
 
 ```
 
