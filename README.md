@@ -23,7 +23,7 @@ https://your-live-link.com
 ## 🛠️ Tech Stack
 
 - Frontend: React.js
-- Styling: CSS / Tailwind CSS
+- Styling: Tailwind CSS
 - Storage: LocalStorage
 
 (Note: Update this section based on your actual tech stack)
@@ -31,7 +31,7 @@ https://your-live-link.com
 ---
 
 ## 📁 Project Structure
-
+```
 paste-app/
   src/
     components/
@@ -42,7 +42,7 @@ paste-app/
   package.json
   README.md
 
----
+```
 
 ## ⚙️ Installation & Setup
 
