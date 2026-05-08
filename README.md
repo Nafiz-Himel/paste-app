@@ -5,7 +5,8 @@ A simple and modern Paste App that allows users to create, store, and share text
 ---
 
 ## 🚀 Live Demo
-https://your-live-link.com
+🔗 Live Demo: https://paste-app-alpha-flame.vercel.app/
+📦 Repository: https://github.com/Nafiz-Himel/paste-app
 
 ---
 
