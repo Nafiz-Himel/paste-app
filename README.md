@@ -1,16 +1,85 @@
-# React + Vite
+# 📋 Paste App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and modern Paste App that allows users to create, store, and share text snippets easily — similar to Pastebin.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
+https://your-live-link.com
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- Create and save text snippets (pastes)
+- Share paste via unique URL
+- View all saved pastes
+- Delete pastes
+- Fast and responsive UI
+- Clean and minimal design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- Frontend: React.js
+- Styling: CSS / Tailwind CSS
+- Storage: LocalStorage
+
+(Note: Update this section based on your actual tech stack)
+
+---
+
+## 📁 Project Structure
+
+paste-app/
+  src/
+    components/
+    pages/
+    hooks/
+    utils/
+  public/
+  package.json
+  README.md
+
+---
+
+## ⚙️ Installation & Setup
+
+Clone the repository:
+
+git clone https://github.com/Nafiz-Himel/paste-app.git
+cd paste-app
+
+Install dependencies:
+
+npm install
+
+Run the development server:
+
+npm run dev
+
+---
+
+## 📌 Usage
+
+1. Open the app in your browser
+2. Create a new paste
+3. Save it
+4. Share the generated link
+
+---
+
+## 🎯 Future Improvements
+
+- User authentication
+- Private & public pastes
+- Syntax highlighting
+- Expiry time for pastes
+
+---
+
+## 👨‍💻 Author
+
+Nafiz Himel  
+GitHub: https://github.com/Nafiz-Himel
