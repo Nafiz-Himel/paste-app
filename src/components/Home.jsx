@@ -1,33 +1,41 @@
-import React from "react";
-import { useState } from "react";
-import { useDispatch } from "react-redux";
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux"; 
 import { useSearchParams } from "react-router-dom";
-import { addToPaste, updateToPaste } from "../redux/pasteSlice"; 
+import { addToPaste, updateToPaste } from "../redux/pasteSlice";
 
 const Home = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [searchParams, setSearchParams] = useSearchParams("");
   const pasteId = searchParams.get("pasteId");
-
   const dispatch = useDispatch();
+
+  const allPaste = useSelector((state) => state.paste.paste); 
+
+  useEffect(() => {                          
+      const paste = allPaste.find((p) => p._id === pasteId);
+      if (paste) {
+        setTitle(paste.title);
+        setContent(paste.content);           
+    }
+  }, [pasteId]);
 
   function createPaste() {
     const paste = {
       title: title,
-      content: content,        
+      content: content,
       _id: pasteId || Date.now().toString(36),
       createdAt: new Date().toISOString(),
     };
 
     if (pasteId) {
-      dispatch(updateToPaste(paste)); 
+      dispatch(updateToPaste(paste));
     } else {
       dispatch(addToPaste(paste));
     }
 
     setTitle("");
-    setContent("");             
+    setContent("");
     setSearchParams({});
   }
 
@@ -41,7 +49,6 @@ const Home = () => {
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
-
         <button onClick={createPaste} className="p-3 rounded-2xl mt-2">
           {pasteId ? "Update My Paste" : "Create My Paste"}
         </button>
